@@ -34,7 +34,8 @@ router.post('/', async (req, res) => {
           dataParsingtoIndo.push(tempData);
         });
         res.status(200).send({
-          data: dataParsingtoIndo
+          data: dataParsingtoIndo,
+          total_data: dataParsingtoIndo.length,
         });
       });
     });
